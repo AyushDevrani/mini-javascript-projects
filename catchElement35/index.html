@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>catch me</title>
+  <style>
+    .output {
+      background-color: aquamarine;
+      height: 500px;
+      width: 500px;
+      border: 1px solid black;
+      overflow: hidden;
+      cursor: grab;
+    }
+
+    .box {
+      position: relative;
+      left: 50%;
+      top: 50%;
+      width: 100px;
+      height: 100px;
+      border-radius: 15px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="message">
+    X: <span class="x">0</span>
+    Y: <span class="y">0</span>
+    Score: <span class="s">0</span>
+  </div>
+  <div class="output"></div>
+  <script src="app.js"></script>
+</body>
+
+</html>
