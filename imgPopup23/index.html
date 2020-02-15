@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>javascript</title>
+  <style>
+    .hide {
+      display: none;
+    }
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .66);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .output {
+      width: 60%;
+      height: 40%;
+      background-color: white;
+      position: absolute;
+      top: 30%;
+      left: 20%;
+      overflow: hidden;
+      z-index: 100;
+    }
+
+    .output img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .output span {
+      position: absolute;
+      top: 10px;
+      right: 5%;
+      z-index: 105;
+      cursor: pointer;
+      color: white;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pop">
+    <img src="https://via.placeholder.com/150/09f?text=image1">
+    <img src="https://via.placeholder.com/150/E4E?text=image2">
+    <img src="https://via.placeholder.com/150/1f1?text=image3">
+  </div>
+
+  <div class="show hide">
+    <div class="overlay close">
+    </div>
+    <div class="output">
+      <span class="close">X</span>
+      <img src="">
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
